@@ -1,6 +1,6 @@
 # BitZenyPlus - Node Open Mining Portal
 
-This is a Yespower mining pool based off of Node Open Mining Portal.
+This is a YesPoWer mining pool based off of Node Open Mining Portal.
 
 Donations for development are greatly appreciated!
   * ZNY: ZmnBu9jPKvVFL22PcwMHSEuVpTxFeCdvNv
