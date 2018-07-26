@@ -123,7 +123,7 @@ output from ZNY-NOMP.
 
 #### Upgrading ZNY-NOMP
 When updating ZNY-NOMP to the latest code its important to not only `git pull` the latest from this repo, but to also update
-the `node-stratum-pool-yescrypt-0.5` and `node-multi-hashing-yescrypt-0.5` modules, and any config files that may have been changed.
+the `node-stratum-pool-yespower` and `node-multi-hashing-yespower` modules, and any config files that may have been changed.
 * Inside your ZNY-NOMP directory (where the init.js script is) do `git pull` to get the latest ZNY-NOMP code.
 * Remove the dependenices by deleting the `node_modules` directory with `rm -r node_modules`.
 * Run `npm update` to force updating/reinstalling of the dependencies.
