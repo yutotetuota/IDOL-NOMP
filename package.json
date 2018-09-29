@@ -50,7 +50,7 @@
         "nonce": "1.0.4",
         "redis": "2.7.1",
         "request": "2.81.0",
-        "stratum-pool": "git+https://github.com/yutotetuota/node-stratum-pool-tribus2.git"
+        "stratum-pool": "git+https://github.com/bellflower2015/node-stratum-pool.git"
     },
     "engines": {
         "node": ">=0.10"
