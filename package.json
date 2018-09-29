@@ -1,7 +1,7 @@
 {
-    "name": "zny-nomp",
+    "name": "idol-nomp",
     "version": "0.0.4",
-    "description": "BitZeny (yescrypt) stratum mining pool based on NOMP",
+    "description": "IDOLCOIN (tribus) stratum mining pool based on NOMP",
     "keywords": [
         "stratum",
         "mining",
@@ -12,9 +12,9 @@
         "zny",
         "yescrypt"
     ],
-    "homepage": "https://github.com/ROZ-MOFUMOFU-ME/zny-nomp",
+    "homepage": "https://github.com/yutotetuota/IDOL-NOMP",
     "bugs": {
-        "url": "https://github.com/ROZ-MOFUMOFU-ME/zny-nomp/issues"
+        "url": "https://github.com/yutotetuota/IDOL-NOMP/issues"
     },
     "license": "MIT",
     "author": "Joshua Yabut",
@@ -32,7 +32,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ROZ-MOFUMOFU-ME/zny-nomp.git"
+        "url": "https://github.com/yutotetuota/IDOL-NOMP.git"
     },
     "dependencies": {
         "async": "2.3.0",
@@ -50,7 +50,7 @@
         "nonce": "1.0.4",
         "redis": "2.7.1",
         "request": "2.81.0",
-        "stratum-pool": "git+https://github.com/ROZ-MOFUMOFU-ME/node-stratum-pool-yescrypt-0.5.git"
+        "stratum-pool": "git+https://github.com/yutotetuota/node-stratum-pool-tribus.git"
     },
     "engines": {
         "node": ">=0.10"
