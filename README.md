@@ -1,12 +1,12 @@
-# BitZeny - Node Open Mining Portal
+# IDOLCOIN - Node Open Mining Portal
 
-This is a Yescrypt-0.5 mining pool based off of Node Open Mining Portal.
+This is a tribus mining pool based off of Node Open Mining Portal.
 
 Donations for development are greatly appreciated!
-  * ZNY: ZmnBu9jPKvVFL22PcwMHSEuVpTxFeCdvNv
+  * IDOL: iPg72S7MqiiMar7Cqkb6GvmLeHSUsTeXax
 
 #### Production Usage Notice
-This is beta software. All of the following are things that can change and break an existing ZNY-NOMP setup: functionality of any feature, structure of configuration files and structure of redis data. If you use this software in production then *DO NOT* pull new code straight into production usage because it can and often will break your setup and require you to tweak things like config files or redis data. *Only tagged releases are considered stable.*
+This is beta software. All of the following are things that can change and break an existing IDOL-NOMP setup: functionality of any feature, structure of configuration files and structure of redis data. If you use this software in production then *DO NOT* pull new code straight into production usage because it can and often will break your setup and require you to tweak things like config files or redis data. *Only tagged releases are considered stable.*
 
 #### Paid Solution
 Usage of this software requires abilities with sysadmin, database admin, coin daemons, and sometimes a bit of programming. Running a production pool can literally be more work than a full-time job.
@@ -14,19 +14,13 @@ Usage of this software requires abilities with sysadmin, database admin, coin da
 
 ### Community
 Forum
-* join: https://bitzeny.tech/
+* join: https://idol-coin.io
 
-Wiki
-* https://bitzeny.wiki.fc2.com/
+If your pool uses IDOL-NOMP let us know and we will list your website here.
 
-If your pool uses ZNY-NOMP let us know and we will list your website here.
+### Some pools using IDOL-NOMP or node-stratum-tribus-module:
 
-### Some pools using ZNY-NOMP or node-stratum-yescrypt-0.5-module:
-
-* [mofumofu.me - BitZeny Mining Pool](https://zny.mofumofu.me/)
-* [人のプール](http://mining.zinntikumugai.xyz/)
-* [みんなのプール](https://www.minnano-pool.work/)
-* [SEMI-POOL](https://zny.semi-pool.com/)
+* [IDOL-NOMP japanesecoin-pool.work](https://idol/japanesecoin-pool.work/)
 
 Usage
 =====
@@ -52,7 +46,7 @@ Follow the build/install instructions for your coin daemon. Your coin.conf file 
 daemon=1
 rpcuser=username
 rpcpassword=password
-rpcport=9252
+rpcport=32339
 ```
 For redundancy, its recommended to have at least two daemon instances running in case one drops out-of-sync or offline,
 all instances will be polled for block/transaction updates and be used for submitting blocks. Creating a backup daemon
@@ -73,8 +67,8 @@ Clone the repository and run `npm update` for all the dependencies to be install
 sudo apt-get install build-essential libsodium-dev npm
 sudo npm install n -g
 sudo n stable
-git clone https://github.com/ROZ-MOFUMOFU-ME/zny-nomp
-cd zny-nomp
+git clone https://github.com/yutotetuota/IDOL-NOMP
+cd IDOL-NOMP
 npm update
 npm install
 ```
@@ -100,7 +94,7 @@ node [path to cli.js] [coin name in config] [block hash symbol]
 ```
 Example: inside `bitzeny.conf` add the line
 ```
-blocknotify=node /home/user/zny-nomp/scripts/cli.js blocknotify bitzeny %s
+blocknotify=node /home/user/IDOL-NOMP/scripts/cli.js blocknotify bitzeny %s
 ```
 
 Alternatively, you can use a more efficient block notify script written in pure C. Build and usage instructions
@@ -123,10 +117,10 @@ output from ZNY-NOMP.
 * Use [New Relic](http://newrelic.com/) to monitor your ZNY-NOMP instance and server performance.
 
 
-#### Upgrading ZNY-NOMP
-When updating ZNY-NOMP to the latest code its important to not only `git pull` the latest from this repo, but to also update
-the `node-stratum-pool-yescrypt-0.5` and `node-multi-hashing-yescrypt-0.5` modules, and any config files that may have been changed.
-* Inside your ZNY-NOMP directory (where the init.js script is) do `git pull` to get the latest ZNY-NOMP code.
+#### Upgrading IDOL-NOMP
+When updating IDOL-NOMP to the latest code its important to not only `git pull` the latest from this repo, but to also update
+the `node-stratum-pool-tribus` and `node-multi-hashing-tribus` modules, and any config files that may have been changed.
+* Inside your IDOL-NOMP directory (where the init.js script is) do `git pull` to get the latest IDOL-NOMP code.
 * Remove the dependenices by deleting the `node_modules` directory with `rm -r node_modules`.
 * Run `npm update` to force updating/reinstalling of the dependencies.
 * Compare your `config.json` and `pool_configs/coin.json` configurations to the latest example ones in this repo or the ones in the setup instructions where each config field is explained. <b>You may need to modify or add any new changes.</b>
@@ -134,6 +128,9 @@ the `node-stratum-pool-yescrypt-0.5` and `node-multi-hashing-yescrypt-0.5` modul
 
 Credits
 -------
+### IDOL-NOMP
+* [yutotetuota](https://github.com/yutotetuota)
+
 ### ZNY-NOMP
 * [ROZ-MOFUMOFU-ME](https://github.com/ROZ-MOFUMOFU-ME)
 
